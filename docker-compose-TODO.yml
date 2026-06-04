@@ -1,6 +1,6 @@
 services:
   web:
-    TODO: ./TODO
+    build: ./nginx
     container_name: nginx-web-tier
     ports:
       - "8080:80"
