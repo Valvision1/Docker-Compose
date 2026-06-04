@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     networks:
-      - TODO
+      - custom_bridge_network
 
   db:
     image: mysql:8.0
@@ -18,7 +18,7 @@ services:
     volumes:
       - TODO:/var/lib/mysql
     networks:
-      - TODO
+      - custom_bridge_network
 
 volumes:
   mysql8_datavol:
