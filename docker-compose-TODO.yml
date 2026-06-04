@@ -16,7 +16,7 @@ services:
       MYSQL_ROOT_PASSWORD: mysecret
       MYSQL_DATABASE: demo
     volumes:
-      - TODO:/var/lib/mysql
+      - mysql8_datavol:/var/lib/mysql
     networks:
       - custom_bridge_network
 
